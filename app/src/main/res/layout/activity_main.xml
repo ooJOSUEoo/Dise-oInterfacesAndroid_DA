@@ -2,16 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="@color/red"
     android:gravity="center">
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
+        android:id="@+id/tvMainTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-                android:text="Hola Platzi, curso de interfaces"/>
+        tools:background="@color/teal_200"
+        tools:text="Hola Platzi, curso de interfaces" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:textSize="20sp"
+        tools:background="@color/red"
+        tools:text="Hola Platzi, curso de interfaces" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@color/teal_200"
+        tools:text="Hola Platzi, curso de interfaces" />
 
     <EditText
+        android:background="@color/purple_700"
+        android:inputType="number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Escribe tu nombre" />
